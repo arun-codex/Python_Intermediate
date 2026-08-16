@@ -1,0 +1,877 @@
+PYTHON INTERMEDIATE — DAY 1
+Core Python Revision + Problem Solving + Student Marks Analyzer
+===============================================================
+
+GOAL
+----
+Day 1 is a transition from Python basics to intermediate Python.
+
+Do NOT relearn the entire beginner course.
+Revise the basics quickly, then focus on:
+- Functions
+- Problem solving
+- Input validation
+- Edge cases
+- Reusable code
+- File handling
+- Testing
+
+TOTAL STUDY TIME
+----------------
+Approximately 3 hours.
+
+Suggested schedule:
+00:00–00:10  Setup
+00:10–00:35  Core Python revision
+00:35–00:55  Function revision
+00:55–01:40  Coding challenges
+01:40–01:50  Break
+01:50–02:40  Student Marks Analyzer
+02:40–02:55  Testing and edge cases
+02:55–03:00  GitHub + notes
+
+
+PART 1 — SETUP
+--------------
+
+Create:
+
+intermediate_python/
+└── day_01_revision/
+
+Recommended files:
+
+day_01_revision/
+├── revision.py
+├── challenges.py
+├── student_marks_analyzer.py
+├── student_report.txt
+└── README.md
+
+
+PART 2 — CORE PYTHON REVISION
+-----------------------------
+
+Spend about 25 minutes.
+
+Revise these topics from memory:
+
+1. Variables and data types
+2. Strings
+3. Lists
+4. Dictionaries
+5. Conditions
+6. for loops
+7. while loops
+8. Functions
+9. Basic file handling
+
+Example:
+
+name = "Arun"
+age = 23
+marks = [85, 72, 91, 66, 88]
+
+Check types:
+
+print(type(name))
+print(type(age))
+print(type(marks))
+
+
+STRINGS
+-------
+
+Practice:
+
+text = "Python Cybersecurity"
+
+len(text)
+text.lower()
+text.upper()
+text.replace("Python", "Advanced Python")
+text.split()
+
+Indexing:
+
+text[0]
+text[-1]
+
+
+LISTS
+-----
+
+Practice:
+
+marks = [85, 72, 91, 66, 88]
+
+len(marks)
+sum(marks)
+max(marks)
+min(marks)
+
+marks.append(95)
+marks.remove(66)
+marks.sort()
+
+Think about the difference between:
+
+marks.sort()
+
+and:
+
+sorted(marks)
+
+
+DICTIONARIES
+------------
+
+Practice:
+
+student = {
+    "name": "Arun",
+    "age": 23,
+    "marks": 85
+}
+
+student["name"]
+student["marks"]
+student.keys()
+student.values()
+student.items()
+
+Add a new value:
+
+student["course"] = "BCA"
+
+
+CONDITIONS
+----------
+
+Practice writing if/elif/else logic.
+
+Example:
+
+marks = 75
+
+if marks >= 90:
+    print("A+")
+elif marks >= 80:
+    print("A")
+elif marks >= 70:
+    print("B")
+else:
+    print("C")
+
+
+LOOPS
+-----
+
+Practice both:
+
+for number in range(1, 11):
+    print(number)
+
+and:
+
+numbers = [10, 20, 30, 40]
+
+for number in numbers:
+    print(number)
+
+Also write a while loop that counts from 1 to 5.
+
+
+PART 3 — FUNCTION REVISION
+--------------------------
+
+Spend about 20 minutes.
+
+Basic function:
+
+def greet():
+    print("Hello")
+
+greet()
+
+Function with parameter:
+
+def greet(name):
+    print("Hello", name)
+
+greet("Arun")
+
+Function with return:
+
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+print(result)
+
+IMPORTANT:
+A parameter is information given to a function.
+return sends a result back to the code that called the function.
+
+INTERMEDIATE MINDSET
+--------------------
+
+Instead of writing everything in one block:
+
+marks = [80, 90, 70]
+
+total = sum(marks)
+average = total / len(marks)
+
+Use reusable functions:
+
+def calculate_total(marks):
+    return sum(marks)
+
+def calculate_average(marks):
+    return sum(marks) / len(marks)
+
+The goal is to start breaking large problems into smaller reusable functions.
+
+
+PART 4 — CODING CHALLENGES
+--------------------------
+
+Spend about 45 minutes.
+
+RULE:
+Try to solve these without watching solutions first.
+
+
+CHALLENGE 1 — EVEN NUMBER
+-------------------------
+
+Create:
+
+def is_even(number):
+    pass
+
+Expected:
+
+is_even(10) -> True
+is_even(7)  -> False
+
+
+CHALLENGE 2 — PRIME NUMBER
+---------------------------
+
+Create:
+
+def is_prime(number):
+    pass
+
+Test:
+
+2
+3
+4
+7
+10
+17
+20
+
+IMPORTANT EDGE CASES:
+
+0
+1
+2
+
+
+CHALLENGE 3 — REVERSE NUMBER
+----------------------------
+
+Create:
+
+def reverse_number(number):
+    pass
+
+Example:
+
+12345 -> 54321
+
+RULE:
+Do NOT convert the number to a string.
+
+Use mathematical thinking with:
+%
+//
+
+This challenge tests understanding of operators.
+
+
+CHALLENGE 4 — COUNT VOWELS
+--------------------------
+
+Create:
+
+def count_vowels(text):
+    pass
+
+Example:
+
+"hello world" -> 3
+
+Test:
+
+HELLO
+Python
+Cybersecurity
+12345
+""
+
+
+CHALLENGE 5 — WORD FREQUENCY
+----------------------------
+
+Create:
+
+def word_frequency(sentence):
+    pass
+
+Input:
+
+python is easy python is powerful
+
+Expected:
+
+{
+    "python": 2,
+    "is": 2,
+    "easy": 1,
+    "powerful": 1
+}
+
+CYBERSECURITY CONNECTION:
+Word/event frequency is directly useful when analyzing logs and repeated events.
+
+
+CHALLENGE 6 — SECOND LARGEST
+----------------------------
+
+Create:
+
+def find_second_largest(numbers):
+    pass
+
+Example:
+
+[10, 5, 20, 8, 15]
+
+Expected:
+
+15
+
+IMPORTANT:
+Test:
+
+[10, 20, 20, 5]
+
+Decide whether the second-largest should be 20 or 10.
+The requirement must be clear before coding.
+
+
+CHALLENGE 7 — REMOVE DUPLICATES
+-------------------------------
+
+Create:
+
+def remove_duplicates(items):
+    pass
+
+Input:
+
+[1, 2, 2, 3, 4, 4, 5]
+
+Expected:
+
+[1, 2, 3, 4, 5]
+
+EXTRA REQUIREMENT:
+Preserve the original order.
+
+Test:
+
+["a", "b", "a", "c", "b"]
+
+
+BREAK
+-----
+
+Take a 10-minute break before the main project.
+
+
+PART 5 — MAIN PROJECT
+---------------------
+
+STUDENT MARKS ANALYZER
+
+Build a complete Python program.
+
+REQUIREMENTS:
+
+1. Ask for student name.
+2. Ask for marks in five subjects.
+3. Store marks in a list.
+4. Calculate total.
+5. Calculate average.
+6. Find highest mark.
+7. Find lowest mark.
+8. Assign a grade.
+9. Save the report to a text file.
+
+
+EXPECTED INPUT FLOW
+-------------------
+
+Enter student name:
+Enter Python marks:
+Enter C marks:
+Enter Networking marks:
+Enter Maths marks:
+Enter English marks:
+
+
+SUGGESTED FUNCTION DESIGN
+-------------------------
+
+Try designing the program using functions such as:
+
+def get_student_name():
+    pass
+
+def get_marks():
+    pass
+
+def calculate_total(marks):
+    pass
+
+def calculate_average(marks):
+    pass
+
+def calculate_grade(average):
+    pass
+
+def generate_report(name, marks):
+    pass
+
+def save_report(report):
+    pass
+
+You do not have to use this exact design.
+The important goal is to break the problem into smaller reusable functions.
+
+
+INPUT VALIDATION
+----------------
+
+Marks should logically be between:
+
+0 and 100
+
+Invalid examples:
+
+-10
+101
+abc
+empty input
+
+Valid examples:
+
+0
+50
+75
+100
+
+Decide whether decimal marks such as 85.5 should be accepted.
+
+
+CALCULATIONS
+------------
+
+Total:
+
+sum(marks)
+
+Average:
+
+sum(marks) / len(marks)
+
+Highest:
+
+max(marks)
+
+Lowest:
+
+min(marks)
+
+
+GRADING SYSTEM
+--------------
+
+Use a grading system such as:
+
+90–100 -> A+
+80–89  -> A
+70–79  -> B
+60–69  -> C
+50–59  -> D
+Below 50 -> F
+
+You may define the exact boundaries clearly in your program.
+
+
+EXPECTED REPORT
+---------------
+
+================================
+       STUDENT REPORT
+================================
+
+Student: Arun
+
+Marks:
+Python       : 85
+C            : 78
+Networking   : 91
+Maths        : 72
+English      : 80
+
+Total        : 406
+Average      : 81.20
+Highest      : 91
+Lowest       : 72
+Grade        : A
+
+================================
+
+Save this into:
+
+student_report.txt
+
+
+PART 6 — TEST YOUR PROGRAM
+--------------------------
+
+Spend about 15 minutes trying to break your own program.
+
+Do NOT test only valid input.
+
+
+TEST 1
+------
+
+Enter:
+
+-10
+
+Expected:
+Program should reject it.
+
+
+TEST 2
+------
+
+Enter:
+
+150
+
+Expected:
+Program should reject it.
+
+
+TEST 3
+------
+
+Enter:
+
+abc
+
+Expected:
+Program should handle invalid input without crashing.
+
+
+TEST 4
+------
+
+Enter an empty value.
+
+Expected:
+Program should handle it appropriately.
+
+
+TEST 5
+------
+
+Enter:
+
+0
+
+Expected:
+Program should still work correctly.
+
+
+TEST 6
+------
+
+Try decimal input:
+
+85.5
+
+Decide whether the program should allow it.
+
+
+SECURITY MINDSET
+----------------
+
+Never blindly trust input.
+
+Think:
+
+UNTRUSTED INPUT
+       |
+       v
+VALIDATE
+       |
+       v
+PROCESS
+       |
+       v
+HANDLE ERRORS
+       |
+       v
+OUTPUT
+
+This habit becomes important later when working with:
+- HTTP requests
+- API responses
+- filenames
+- log files
+- usernames
+- IP addresses
+- command-line arguments
+- databases
+
+
+PART 7 — CYBERSECURITY CONNECTION
+---------------------------------
+
+Today's concepts are directly useful later.
+
+Functions:
+- Reusable security scripts
+- Network utilities
+- Log processing
+- Automation
+
+Lists/dictionaries:
+- Store scan results
+- Process logs
+- Store API data
+
+String processing:
+- Parse logs
+- Search indicators
+- Extract information
+
+Input validation:
+- Treat external input as untrusted
+- Prevent malformed data from breaking programs
+
+File handling:
+- Read logs
+- Generate reports
+- Process configuration files
+
+Problem solving:
+- Break security automation into smaller components
+
+
+PART 8 — README
+---------------
+
+Create README.md with:
+
+# Day 1 — Intermediate Python
+
+## Topics
+- Core Python revision
+- Functions
+- Lists
+- Dictionaries
+- Input validation
+- Problem solving
+- File handling
+
+## Challenges
+1. Even number checker
+2. Prime number checker
+3. Reverse number
+4. Vowel counter
+5. Word frequency
+6. Second largest
+7. Remove duplicates
+
+## Mini Project
+Student Marks Analyzer
+
+## What I Learned
+Write your own notes here.
+
+## Challenges I Faced
+Write the problems you encountered.
+
+## Improvements I Made
+Write what you improved after testing.
+
+
+FINAL PROJECT STRUCTURE
+-----------------------
+
+intermediate_python/
+|
+└── day_01_revision/
+    |
+    ├── revision.py
+    ├── challenges.py
+    ├── student_marks_analyzer.py
+    ├── student_report.txt
+    └── README.md
+
+
+PART 9 — GITHUB
+---------------
+
+After everything works:
+
+git status
+
+git add .
+
+git commit -m "Complete Intermediate Python Day 1"
+
+git push
+
+
+DAY 1 COMPLETION CHECKLIST
+--------------------------
+
+[ ] Revised Python basics without rewatching the beginner course.
+[ ] Reviewed variables and data types.
+[ ] Reviewed strings.
+[ ] Reviewed lists.
+[ ] Reviewed dictionaries.
+[ ] Reviewed conditions.
+[ ] Reviewed for loops.
+[ ] Reviewed while loops.
+[ ] Reviewed functions.
+[ ] Practiced parameters.
+[ ] Practiced return values.
+[ ] Solved is_even().
+[ ] Solved is_prime().
+[ ] Solved reverse_number().
+[ ] Solved count_vowels().
+[ ] Solved word_frequency().
+[ ] Solved find_second_largest().
+[ ] Solved remove_duplicates().
+[ ] Built Student Marks Analyzer.
+[ ] Added input validation.
+[ ] Tested invalid input.
+[ ] Tested edge cases.
+[ ] Generated student_report.txt.
+[ ] Created README.md.
+[ ] Reviewed the code.
+[ ] Committed work to GitHub.
+
+
+DAY 1 SUCCESS CRITERIA
+----------------------
+
+You do NOT need perfect code.
+
+Day 1 is successful if you can look at a problem and think:
+
+"How can I break this into smaller functions?"
+
+The transition is:
+
+BEGINNER:
+How do I write this program?
+
+INTERMEDIATE:
+How do I break this problem into reusable pieces?
+
+CORE PATTERN:
+Problem
+  |
+  v
+Break into smaller problems
+  |
+  v
+Functions
+  |
+  v
+Input
+  |
+  v
+Validation
+  |
+  v
+Processing
+  |
+  v
+Testing
+  |
+  v
+Output
+  |
+  v
+Documentation
+  |
+  v
+GitHub
+
+
+DAILY RULE
+----------
+
+Learn concept
+    ↓
+Watch one video OR read documentation
+    ↓
+Type code yourself
+    ↓
+Build a small task
+    ↓
+Test normal input
+    ↓
+Test bad input
+    ↓
+Think about edge cases
+    ↓
+Refactor
+    ↓
+Write notes
+    ↓
+Push to GitHub
+
+
+NEXT DAY
+--------
+
+Day 2:
+Problem Solving + Clean Code
+
+Focus:
+- Breaking problems into functions
+- Meaningful variable names
+- Avoiding repeated code
+- Input validation
+- Edge cases
+- Docstrings
+- Comments
+- Contact Book mini project
