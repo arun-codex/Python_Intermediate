@@ -22,3 +22,33 @@ print(persentage)
 
 ```
 
+
+# 2. Strings
+
+``` 
+# 2. Strings
+
+text = "Python Cybersecurity"
+
+len(text)
+text.lower()
+text.upper()
+text.capitalize()
+text.replace("Python", "Advance Python")
+text.split
+
+text[0]
+text[-1]
+
+print(len(text))
+print(text.lower())
+print(text.upper())
+print(text.capitalize())
+print(text.replace("Python","Advance Python"))
+print(text.split(" "))
+print(text[0])
+print(text[-1])
+
+```
+
+
