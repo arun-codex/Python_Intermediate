@@ -57,8 +57,12 @@
 def even_number(number):
     if number < 0:
         print(f"{number} is negative number, enter number greater than zero.")
-    elif number = 0:
+    elif number == 0:
         print(f"{number} is neither even nor odd number.")
+    elif number % 2 == 0:
+        print(f"{number} is even number")
+    else:
+        print(f"{number} is odd number")
 
-
-
+number = int(input("Enter a number: "))
+even_number(number)

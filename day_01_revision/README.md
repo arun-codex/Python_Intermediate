@@ -207,3 +207,23 @@ print(result)
 ```
 
 ## PART 4 — CODING CHALLENGES
+
+CHALLENGE 1 — EVEN NUMBER
+
+```python
+# CHALLENGE 1 — EVEN NUMBER
+
+
+def even_number(number):
+    if number < 0:
+        print(f"{number} is negative number, enter number greater than zero.")
+    elif number == 0:
+        print(f"{number} is neither even nor odd number.")
+    elif number % 2 == 0:
+        print(f"{number} is even number")
+    else:
+        print(f"{number} is odd number")
+
+number = int(input("Enter a number: "))
+even_number(number)
+```
