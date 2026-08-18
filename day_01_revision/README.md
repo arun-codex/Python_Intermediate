@@ -1,6 +1,8 @@
+# Python Revision
+
 ## 1. Variables and data types
 
-```
+```python
 # 1. Variables and data types
 
 name = "Arun"
@@ -22,10 +24,9 @@ print(persentage)
 
 ```
 
-
 ## 2. Strings
 
-``` 
+```python
 # 2. Strings
 
 text = "Python Cybersecurity"
@@ -53,7 +54,7 @@ print(text[-1])
 
 ## 3. Lists
 
-```
+```python
 # 3. Lists
 
 marks = [85, 72, 91, 66, 88]
@@ -76,10 +77,9 @@ print(sorted(marks))
 
 ```
 
-
 ## 4. Dictionaries
 
-```
+```python
 # 4. Dictionaries
 
 
@@ -99,11 +99,9 @@ print(student)
 
 ```
 
-
-
 ## 5. Conditions
 
-```
+```python
 # 5. Conditions
 
 
@@ -120,11 +118,11 @@ else:
     
 ```
 
-# LOOP
+## LOOP
 
 ## 6. for loops
 
-```
+```python
 # 6. for loops
 
 
@@ -132,14 +130,39 @@ for i in range(1,11):
     print(i)
 ```
 
-## 7. while loops
-
-```
-# 7. while loops
-
+```python
 
 numbers = [10, 20, 30, 40]
 
 for number in numbers:
     print(number)
+```
+
+## 7. while loops
+
+```python
+# 7. while loops
+
+num = 1
+while num <= 10:
+    print(num)
+    num += 1
+```
+
+```python
+numbers = [10, 20, 30, 40]
+
+index = 0
+while index < len(numbers):
+    print(numbers[index])
+    index += 1
+```
+
+```python
+# Also write a while loop that counts from 1 to 5.
+
+i = 1
+while i <= 5:
+    print(i)
+    i +=1
 ```
