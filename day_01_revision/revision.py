@@ -54,15 +54,24 @@
 
 # CHALLENGE 1 — EVEN NUMBER
 
-def even_number(number):
-    if number < 0:
-        print(f"{number} is negative number, enter number greater than zero.")
-    elif number == 0:
-        print(f"{number} is neither even nor odd number.")
-    elif number % 2 == 0:
-        print(f"{number} is even number")
-    else:
-        print(f"{number} is odd number")
+# code are in readme.md
+
+
+# CHALLENGE 2 — PRIME NUMBER
+
+def prime_number(number):
+    if number <= 1:
+        return False
+
+    for i in range(2, int(number)):
+        if number % i == 0:
+            return False
+
+    return True
 
 number = int(input("Enter a number: "))
-even_number(number)
+
+if prime_number(number):
+    print(f"{number} is a prime number")
+else:
+    print(f"{number} is not a prime number")
