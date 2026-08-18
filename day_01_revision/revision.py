@@ -15,19 +15,24 @@
 
 # 4. Dictionaries
 
-student = {
-    "name": "Arun",
-    "age": 23,
-    "marks": 85
-}
 
-print(student["name"])
-print(student["age"])
-print(student["marks"])
+# code are in readme.md
 
 # 5. Conditions
+
+# code are in readme.md
+
 # 6. for loops
+
+# code are in readme.md
+
 # 7. while loops
+
+numbers = [10, 20, 30, 40]
+
+for number in numbers:
+    print(number)
+
 # 8. Functions
 # 9. Basic file handling
 

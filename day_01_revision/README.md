@@ -1,4 +1,4 @@
-# 1. Variables and data types
+## 1. Variables and data types
 
 ```
 # 1. Variables and data types
@@ -23,7 +23,7 @@ print(persentage)
 ```
 
 
-# 2. Strings
+## 2. Strings
 
 ``` 
 # 2. Strings
@@ -51,7 +51,7 @@ print(text[-1])
 
 ```
 
-# 3. Lists
+## 3. Lists
 
 ```
 # 3. Lists
@@ -74,4 +74,72 @@ print(marks)
 
 print(sorted(marks))
 
+```
+
+
+## 4. Dictionaries
+
+```
+# 4. Dictionaries
+
+
+student = {
+    "name": "Arun",
+    "age": 23,
+    "marks": 85
+}
+
+print(student["name"])
+print(student["age"])
+print(student["marks"])
+
+student["course"] = "BCA"
+
+print(student)
+
+```
+
+
+
+## 5. Conditions
+
+```
+# 5. Conditions
+
+
+marks = int(input("Enter your marks: "))
+
+if marks >= 90:
+    print("A+")
+elif marks >= 80:
+    print("A")
+elif marks >= 70:
+    print("B")
+else:
+    print("C")
+    
+```
+
+# LOOP
+
+## 6. for loops
+
+```
+# 6. for loops
+
+
+for i in range(1,11):
+    print(i)
+```
+
+## 7. while loops
+
+```
+# 7. while loops
+
+
+numbers = [10, 20, 30, 40]
+
+for number in numbers:
+    print(number)
 ```
