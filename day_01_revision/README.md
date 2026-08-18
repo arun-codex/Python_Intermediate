@@ -51,3 +51,27 @@ print(text[-1])
 
 ```
 
+# 3. Lists
+
+```
+# 3. Lists
+
+marks = [85, 72, 91, 66, 88]
+
+print(len(marks))
+print(sum(marks))
+print((max(marks)))
+print(min(marks))
+
+marks.append(95)
+print(marks)
+
+marks.remove(66)
+print(marks)
+
+marks.sort()
+print(marks)
+
+print(sorted(marks))
+
+```

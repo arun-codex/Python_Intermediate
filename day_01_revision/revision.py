@@ -11,21 +11,23 @@
 
 # 3. Lists
 
-marks = [85, 72, 91, 66, 88]
+# code are in readme.md
 
-print(len(marks))
-print(sum(marks))
-print((max(marks)))
-print(min(marks))
+# 4. Dictionaries
 
-marks.append(95)
-print(marks)
+student = {
+    "name": "Arun",
+    "age": 23,
+    "marks": 85
+}
 
-marks.remove(66)
-print(marks)
+print(student["name"])
+print(student["age"])
+print(student["marks"])
 
-marks.sort()
-print(marks)
-
-print(sorted(marks))
+# 5. Conditions
+# 6. for loops
+# 7. while loops
+# 8. Functions
+# 9. Basic file handling
 
