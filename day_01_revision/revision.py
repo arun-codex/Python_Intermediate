@@ -36,15 +36,19 @@
 
 # Also write a while loop that counts from 1 to 5.
 
-# code are in readme.me
+# code are in readme.md
 
 # 8. Functions
 
 # Basic function:
 
-def greet():
-    print("Hello")
+# code are in readme.md
 
-greet()
+# Function with parameter:
+def greet_name(name):
+    print(f"Hello {name}")
+
+greet_name("Arun")
+
 # 9. Basic file handling
 

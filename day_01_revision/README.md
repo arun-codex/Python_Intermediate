@@ -182,3 +182,13 @@ def greet():
 greet()
 ```
 
+Function with parameter:
+
+```python
+# Function with parameter:
+
+def greet_name(name):
+    print(f"Hello {name}")
+
+greet_name("
+```
