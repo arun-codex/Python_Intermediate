@@ -1,5 +1,7 @@
 # Python Revision
 
+## PART 2 — CORE PYTHON REVISION
+
 ## 1. Variables and data types
 
 ```python
@@ -166,3 +168,17 @@ while i <= 5:
     print(i)
     i +=1
 ```
+
+## PART 3 — FUNCTION REVISION
+
+Basic function:
+
+```python
+# Basic function:
+
+def greet():
+    print("Hello")
+
+greet()
+```
+

@@ -40,6 +40,11 @@
 
 # 8. Functions
 
+# Basic function:
 
+def greet():
+    print("Hello")
+
+greet()
 # 9. Basic file handling
 
