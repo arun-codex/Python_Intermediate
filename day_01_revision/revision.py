@@ -45,10 +45,20 @@
 # code are in readme.md
 
 # Function with parameter:
-def greet_name(name):
-    print(f"Hello {name}")
 
-greet_name("Arun")
+# code are in readme.md
 
-# 9. Basic file handling
+# Function with return:
+
+# code are in readme.md
+
+# CHALLENGE 1 — EVEN NUMBER
+
+def even_number(number):
+    if number < 0:
+        print(f"{number} is negative number, enter number greater than zero.")
+    elif number = 0:
+        print(f"{number} is neither even nor odd number.")
+
+
 

@@ -192,3 +192,18 @@ def greet_name(name):
 
 greet_name("
 ```
+
+Function with return:
+
+```python
+# Function with return:
+
+
+def add(a,b):
+    return a + b
+
+result = add(5,10)
+print(result)
+```
+
+## PART 4 — CODING CHALLENGES
