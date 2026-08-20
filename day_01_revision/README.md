@@ -227,3 +227,28 @@ def even_number(number):
 number = int(input("Enter a number: "))
 even_number(number)
 ```
+
+CHALLENGE 2 — PRIME NUMBER
+
+```python
+# CHALLENGE 2 — PRIME NUMBER
+
+
+def prime_number(number):
+    if number <= 1:
+        return False
+
+    for i in range(2, int(number)):
+        if number % i == 0:
+            return False
+
+    return True
+
+number = int(input("Enter a number: "))
+
+if prime_number(number):
+    print(f"{number} is a prime number")
+else:
+    print(f"{number} is not a prime number")
+
+```

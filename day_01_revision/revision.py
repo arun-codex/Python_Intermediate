@@ -59,19 +59,15 @@
 
 # CHALLENGE 2 — PRIME NUMBER
 
-def prime_number(number):
-    if number <= 1:
-        return False
+# code are in readme.md
 
-    for i in range(2, int(number)):
-        if number % i == 0:
-            return False
+# CHALLENGE 3 — REVERSE NUMBER
 
-    return True
+def reverse_number(number):
+    reverse = 0
+    while number > 0:
+        reverse = (reverse*10)+number%10
+        number = number // 10
+    print(f"Reverse: {reverse}")
 
-number = int(input("Enter a number: "))
-
-if prime_number(number):
-    print(f"{number} is a prime number")
-else:
-    print(f"{number} is not a prime number")
+reverse_number(12345)
